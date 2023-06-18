@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Institution</title>
+    <style>
+        /* CSS for the header section */
+        
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: #333;
+            color: #fff;
+        }
+        
+        header div {
+            flex: 1;
+            text-align: center;
+        }
+        
+        header #logo img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        header #institution-name {
+            font-size: 24px;
+            margin-left: 0px;
+        }
+        
+        header #contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        
+        header #contact-info span {
+            margin-right: 20px;
+        }
+        /* CSS for responsiveness */
+        
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+            header div {
+                margin: 10px 0;
+            }
+            header #logo img {
+                max-width: 80%;
+            }
+            header #institution-name {
+                font-size: 20px;
+            }
+            header #contact-info span {
+                margin-right: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/main-logo.jpg" width="80px" alt="Logo">
+        </div>
+        <div id="institution-name">
+            <h2 id="school-name" class="my-0">Akbar Hossain Model School and College
+            </h2>
+            <p class="m-0">School Code:xxxx | College Code:xxxx | EIIN:xxxx</p>
+        </div>
+        <div id="contact-info">
+            <span>Phone: 123-456-7890</span>
+            <span>Email: info@myinstitution.com</span>
+        </div>
+    </header>
+    <!-- Rest of your HTML code here -->
+</body>
+
+</html>
